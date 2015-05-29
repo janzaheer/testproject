@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from models import Post
+from django.views.generic import View
 
-def post_list(request):
-    posts = Post.objects.all()
-    print posts
-    return render(request, 'blog/post_list.html', {'posts': posts})
+class post_list(View):
+    def get(self, request, *args, **kwargs):
+        posts = Post.objects.all()
+        return render(request, 'blog/post_list.html', {'posts': posts})

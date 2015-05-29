@@ -3,5 +3,5 @@ from django.contrib import admin
 from views import *
 
 urlpatterns = patterns('',
-    url(r'^$', post_list.as_view(), name="post_list"),
+    url(r'^$', post_list2.as_view(), name="post_list"),
 )
