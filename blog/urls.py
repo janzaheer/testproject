@@ -2,6 +2,5 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 
 urlpatterns = patterns('',
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^blogs/', include('blog.urls')),
+    url(r'^$', 'blog.views.post_list', name='post_list'),
 )

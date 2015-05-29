@@ -1,0 +1,29 @@
+body {
+    padding-left: 15px;
+}
+
+h1 a {
+    color: #FCA205;
+    font-family: 'Lobster'
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+.pro-desc {
+    color: #FCA210;
+    margin-left: 40px;
+}
+
+.db-detail {
+    margin-top: 20%;
+    margin-left: 40%;
+}
+
+.db-detail th {
+    color: #FFE363;
+    text-align: center;
+}
+.db-detail td {
+    color: #000000;
+}
+
