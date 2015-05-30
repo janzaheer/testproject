@@ -1,6 +1,6 @@
 {% extends 'blog/base.html' %}
 {% block content%} 
-    {% for post in object_list %}
+    {% for post in posts %}
         <tr>
             <td>{{post.title}}</td>
             <td>{{post.created_date}}</td>

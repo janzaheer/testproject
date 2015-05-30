@@ -16,7 +16,7 @@
        </tr>
            {% block content %}
            {% endblock %}
-    </table>
 	<a href="{% url 'blogs:forms' %}"><button>Go Back</button></a>
+    </table>
 </body>
 </html>
