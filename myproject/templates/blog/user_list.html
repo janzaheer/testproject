@@ -1,0 +1,8 @@
+{% extends 'blog/base.html' %}
+{% block content%}
+    {% for post in object_list %}
+        {% if forloop.last %}
+            {{ post.title }}
+        {% endif %}
+    {%endfor%}
+{% endblock%}

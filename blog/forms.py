@@ -1,9 +1,12 @@
 from django import forms
-from models import Post
+from models import User
 
 
-class PostForm(forms.ModelForm):
+class UserForm(forms.ModelForm):
 
     class Meta:
-        model = Post
-        fields = ('title', 'text',)
+        model = User
+        fields = ('author', 'title',)
+
+    def title_save(self):
+        self.save()
